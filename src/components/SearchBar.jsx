@@ -1,11 +1,13 @@
 import React from 'react';
 
-const SearchBar = (props) => {
+const SearchBar = ({ searchBar, setSearchBar }) => {
     return (
-        <div>
+        <div >
             <input 
             placeholder='Type in movie name...'
-            onChange={(event) => props.setSearchBar(event.target.value)}
+            value={searchBar}
+            onChange={(event) => setSearchBar(event.target.value)}
+            className='text-lg p-2 border-none rounded-l'
             ></input>
         </div>
     )

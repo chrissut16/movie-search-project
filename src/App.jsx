@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import SearchPage from "./pages/SearchPage";
 import ResultPage from "./pages/ResultPage";
 
 function App() {
+
     return (
       <BrowserRouter>
         <Routes>
