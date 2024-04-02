@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 const BackButton = () => {
 
     const navigate = useNavigate();
-
     return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" 
     className="w-6 h-6 cursor-pointer hover:scale-105"
@@ -14,9 +13,3 @@ const BackButton = () => {
 }
 
 export default BackButton;
-
-{/* <button
-className=" text-base bg-white border-none hover:bg-gray-300 cursor-pointer duration-300"
-onClick={() => {navigate('/')}}>
-    Back
-</div> */}
